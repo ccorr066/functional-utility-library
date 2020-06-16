@@ -1,11 +1,25 @@
 // freecodecamp reference
 
+
+function (input1) {
+   // A1: variable counter will determine the tally between heads or tails
+   // A2: the conditional statment to determine whether if the user picks heads or tails
+   // R: will return either heads or tails and keep tally of which is winnning
+}
+
+// freecodecamp reference
+
+
+
 function headsOrTails(input1) {
    // A1: variable counter will determine the tally between heads or tails
    // A2: the conditional statment to determine whether if the user picks heads or tails
    // R: will return either heads or tails and keep tally of which is winnning
 }
+
 // freecodecamp reference
+
+
 
 function headsOrTails(input1) {
    // A1: variable counter will determine the tally between heads or tails
@@ -14,26 +28,56 @@ function headsOrTails(input1) {
 }
 // freecodecamp reference
 
-function headsOrTails(input1) {
+function sentensify(str) {
+ 
+   return str.split(/\W/).join(" ");
+ }
+ sentensify("May-the-force-be-with-you");
+ 
+
+function readItClearlyJoin(input1) {
    // A1: variable counter will determine the tally between heads or tails
    // A2: the conditional statment to determine whether if the user picks heads or tails
    // R: will return either heads or tails and keep tally of which is winnning
 }
 // freecodecamp reference
 
-function headsOrTails(input1) {
+function splitify(str) {
+   return str.split(/\W/);
+ }
+ splitify("Hello World,I-am code");
+ 
+
+function splitStrings(input1) {
    // A1: variable counter will determine the tally between heads or tails
    // A2: the conditional statment to determine whether if the user picks heads or tails
    // R: will return either heads or tails and keep tally of which is winnning
 }
 // freecodecamp reference
 
-function headsOrTails(input1) {
+function alphabeticalOrder(arr) {
+   // Only change code below this line
+ 
+ return arr.sort()
+   // Only change code above this line
+ }
+ alphabeticalOrder(["a", "d", "c", "a", "z", "g"]);
+ 
+function sortInOrder(input1) {
    // A1: variable counter will determine the tally between heads or tails
    // A2: the conditional statment to determine whether if the user picks heads or tails
    // R: will return either heads or tails and keep tally of which is winnning
 }
 // freecodecamp reference
+
+const squareList = (arr) => {
+   return arr
+      .filter((num) => num > 0 && num % parseInt(num) === 0)
+      .map((newNum) => Math.pow(newNum, 2));
+};
+
+const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+console.log(squaredIntegers);
 
 function ComplexHigherOrder(input1) {
    // A1: variable counter will determine the tally between heads or tails
@@ -168,20 +212,19 @@ var watchList = [
    },
 ];
 function getRating(watchList) {
-   var count = 0;
    var averageRating =
-      watchList.reduce((sum, movie) => {
-         if (movie.Director == "Christopher Nolan") {
-            count += 1;
-            return sum + parseFloat(movie.imdbRating);
-         }
-         return sum;
-      }, 0) / count;
-
+      watchList
+         // Use filter to find films directed by Christopher Nolan
+         .filter((film) => film.Director === "Christopher Nolan")
+         // Use map to convert their ratings from strings to numbers
+         .map((film) => Number(film.imdbRating))
+         // Use reduce to add together their ratings
+         .reduce((sumOfRatings, rating) => sumOfRatings + rating) /
+      // Divide by the number of Nolan films to get the average rating
+      watchList.filter((film) => film.Director === "Christopher Nolan").length;
    return averageRating;
 }
 console.log(getRating(watchList));
-
 function oneAnswerReduce(input1) {
    // A1: variable counter will determine the tally between heads or tails
    // A2: the conditional statment to determine whether if the user picks heads or tails
@@ -233,11 +276,11 @@ function sliceArray(anim, beginSlice, endSlice) {
 var inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
 sliceArray(inputAnim, 1, 3);
 
-function sliceList(input1) {
+const sliceList = (input1) => {
    // A1: variable counter will determine the tally between heads or tails
    // A2: the conditional statment to determine whether if the user picks heads or tails
    // R: will return either heads or tails and keep tally of which is winnning
-}
+};
 
 // freecodecamp reference
 let s = [23, 65, 98, 5];
