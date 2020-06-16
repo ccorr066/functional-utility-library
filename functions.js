@@ -1,15 +1,12 @@
 // freecodecamp reference
 
-
-function (input1) {
-   // A1: variable counter will determine the tally between heads or tails
-   // A2: the conditional statment to determine whether if the user picks heads or tails
-   // R: will return either heads or tails and keep tally of which is winnning
-}
+// function (input1) {
+// A1: variable counter will determine the tally between heads or tails
+// A2: the conditional statment to determine whether if the user picks heads or tails
+// R: will return either heads or tails and keep tally of which is winnning
+// }
 
 // freecodecamp reference
-
-
 
 function headsOrTails(input1) {
    // A1: variable counter will determine the tally between heads or tails
@@ -18,8 +15,6 @@ function headsOrTails(input1) {
 }
 
 // freecodecamp reference
-
-
 
 function headsOrTails(input1) {
    // A1: variable counter will determine the tally between heads or tails
@@ -29,11 +24,9 @@ function headsOrTails(input1) {
 // freecodecamp reference
 
 function sentensify(str) {
- 
    return str.split(/\W/).join(" ");
- }
- sentensify("May-the-force-be-with-you");
- 
+}
+sentensify("May-the-force-be-with-you");
 
 function readItClearlyJoin(input1) {
    // A1: variable counter will determine the tally between heads or tails
@@ -44,9 +37,8 @@ function readItClearlyJoin(input1) {
 
 function splitify(str) {
    return str.split(/\W/);
- }
- splitify("Hello World,I-am code");
- 
+}
+splitify("Hello World,I-am code");
 
 function splitStrings(input1) {
    // A1: variable counter will determine the tally between heads or tails
@@ -57,12 +49,12 @@ function splitStrings(input1) {
 
 function alphabeticalOrder(arr) {
    // Only change code below this line
- 
- return arr.sort()
+
+   return arr.sort();
    // Only change code above this line
- }
- alphabeticalOrder(["a", "d", "c", "a", "z", "g"]);
- 
+}
+alphabeticalOrder(["a", "d", "c", "a", "z", "g"]);
+
 function sortInOrder(input1) {
    // A1: variable counter will determine the tally between heads or tails
    // A2: the conditional statment to determine whether if the user picks heads or tails
@@ -299,8 +291,15 @@ let new_s = s.myFilter(function (item) {
    return item % 2 === 1;
 });
 
-function filterIt() {
-   // A1: variable counter will determine the tally between heads or tails
-   // A2: the conditional statment to determine whether if the user picks heads or tails
-   // R: will return either heads or tails and keep tally of which is winnning
+function getNumbersBiggerThan5(numbers) {
+   //  use forEach() instead of a filter()
+   // A1: an array of numbers
+   // R: a new array of numbers all greater or equal to five
+   let filteredNumbers = [];
+   numbers.forEach((number) => {
+      if (number >= 5) {
+         filteredNumbers.push(number);
+      }
+   });
+   return filteredNumbers;
 }
