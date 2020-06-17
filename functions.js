@@ -13,30 +13,45 @@ function some(input1) {
    // R:
 }
 // freecodecamp reference
-
-function every(input1) {
-   // A1:
-   // A2:
-   // R:
+function checkPositive(arr) {
+   return arr.every((value) => value > 0);
 }
-// freecodecamp reference
+checkPositive([1, 2, 3, -4, 5]);
 
-function join(input1) {
+function checkNums(value) {
    // A1:
-   // A2:
    // R:
+   return value.every((nums) => nums > 0);
 }
 
 // freecodecamp reference
 
-function split(input1) {
-   // A1:
-   // A2:
-   // R:
+function SSN(input1) {
+   // A1: takes in what the user is inputing
+   // R: 9 numbers for a social security. it includes a -
+   console.log(input1);
+   let ssn1 = String(input1);
+   let ssn = ssn1.split("");
+   ssn.splice(3, 0, "-");
+   ssn.splice(6, 0, "-");
+   let final = ssn.join("");
+   return final;
 }
 
 // freecodecamp reference
-// The global variable
+
+function splitify(str) {
+   return str.split(/\W/);
+}
+splitify("Hello World,I-am code");
+
+function chopItUp(encode) {
+   // A1: encode is the user input
+   // R: what the user types out and being separated by commas.
+   return encode.split("");
+}
+
+// freecodecamp reference
 var watchList = [
    {
       Title: "Inception",
@@ -165,7 +180,7 @@ var watchList = [
 var ratings = watchList.map((movie) => {
    let title = movie.Title;
    let rating = movie.imdbRating;
-   console.log(title, rating);
+   console.log("this one", title, rating);
    let movieSummary = {
       title: title,
       rating: rating,
@@ -175,11 +190,33 @@ var ratings = watchList.map((movie) => {
 
 console.log(JSON.stringify(ratings));
 
-function map(input1) {
+function musicThatInfluence() {
    // A1:
    // A2:
    // R:
 }
+let albumMasterPiece = [
+   {
+      arist: "Eminem",
+      album: "Slim Shady lp",
+      genre: "Hip-Hop",
+   },
+   {
+      arist: "Metallica",
+      album: " Master of Puppets",
+      genre: "Heavy Metal",
+   },
+   {
+      arist: "Michael Jackson",
+      album: "Thriller",
+      genre: "Pop",
+   },
+   {
+      arist: "Bob Marley",
+      album: "Exodus",
+      genre: "Reggae",
+   },
+];
 // freecodecamp reference
 function nonMutatingConcat(original, attach) {
    return original.concat(attach);
@@ -221,13 +258,12 @@ function sliceArray(anim, beginSlice, endSlice) {
 var inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
 sliceArray(inputAnim, 1, 3);
 
-function sliceList(favoriteSport, beginSlice, endSlice) {
+function sliceList(beginSlice, endSlice) {
    // A1: an array of strings is listed
    // R: user favorite sport and function will slice how many letters they want
-   return favoriteSport.slice(beginSlice, endSlice);
+   return sports.slice(beginSlice, endSlice);
 }
-let sports = [basketball, football, baseball, hockey];
-sliceList(sports, beingSlice, endSlice);
+let sports = ["basketball", "football", "baseball", "hockey"];
 // freecodecamp reference
 let s = [23, 65, 98, 5];
 
