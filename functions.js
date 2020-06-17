@@ -1,83 +1,41 @@
 // freecodecamp reference
 
-// function (input1) {
-// A1: variable counter will determine the tally between heads or tails
-// A2: the conditional statment to determine whether if the user picks heads or tails
-// R: will return either heads or tails and keep tally of which is winnning
-// }
-
-// freecodecamp reference
-
-function headsOrTails(input1) {
-   // A1: variable counter will determine the tally between heads or tails
-   // A2: the conditional statment to determine whether if the user picks heads or tails
-   // R: will return either heads or tails and keep tally of which is winnning
-}
-
-// freecodecamp reference
-
-function headsOrTails(input1) {
-   // A1: variable counter will determine the tally between heads or tails
-   // A2: the conditional statment to determine whether if the user picks heads or tails
-   // R: will return either heads or tails and keep tally of which is winnning
+function includes(input1) {
+   // A1:
+   // A2:
+   // R:
 }
 // freecodecamp reference
 
-function sentensify(str) {
-   return str.split(/\W/).join(" ");
-}
-sentensify("May-the-force-be-with-you");
-
-function readItClearlyJoin(input1) {
-   // A1: variable counter will determine the tally between heads or tails
-   // A2: the conditional statment to determine whether if the user picks heads or tails
-   // R: will return either heads or tails and keep tally of which is winnning
+function some(input1) {
+   // A1:
+   // A2:
+   // R:
 }
 // freecodecamp reference
 
-function splitify(str) {
-   return str.split(/\W/);
-}
-splitify("Hello World,I-am code");
-
-function splitStrings(input1) {
-   // A1: variable counter will determine the tally between heads or tails
-   // A2: the conditional statment to determine whether if the user picks heads or tails
-   // R: will return either heads or tails and keep tally of which is winnning
+function every(input1) {
+   // A1:
+   // A2:
+   // R:
 }
 // freecodecamp reference
 
-function alphabeticalOrder(arr) {
-   // Only change code below this line
-
-   return arr.sort();
-   // Only change code above this line
+function join(input1) {
+   // A1:
+   // A2:
+   // R:
 }
-alphabeticalOrder(["a", "d", "c", "a", "z", "g"]);
 
-function sortInOrder(input1) {
-   // A1: variable counter will determine the tally between heads or tails
-   // A2: the conditional statment to determine whether if the user picks heads or tails
-   // R: will return either heads or tails and keep tally of which is winnning
-}
 // freecodecamp reference
 
-const squareList = (arr) => {
-   return arr
-      .filter((num) => num > 0 && num % parseInt(num) === 0)
-      .map((newNum) => Math.pow(newNum, 2));
-};
-
-const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
-console.log(squaredIntegers);
-
-function ComplexHigherOrder(input1) {
-   // A1: variable counter will determine the tally between heads or tails
-   // A2: the conditional statment to determine whether if the user picks heads or tails
-   // R: will return either heads or tails and keep tally of which is winnning
+function split(input1) {
+   // A1:
+   // A2:
+   // R:
 }
-// freecodecamp reference
 
+// freecodecamp reference
 // The global variable
 var watchList = [
    {
@@ -203,37 +161,24 @@ var watchList = [
       Response: "True",
    },
 ];
-function getRating(watchList) {
-   var averageRating =
-      watchList
-         // Use filter to find films directed by Christopher Nolan
-         .filter((film) => film.Director === "Christopher Nolan")
-         // Use map to convert their ratings from strings to numbers
-         .map((film) => Number(film.imdbRating))
-         // Use reduce to add together their ratings
-         .reduce((sumOfRatings, rating) => sumOfRatings + rating) /
-      // Divide by the number of Nolan films to get the average rating
-      watchList.filter((film) => film.Director === "Christopher Nolan").length;
-   return averageRating;
-}
-console.log(getRating(watchList));
-function oneAnswerReduce(input1) {
-   // A1: variable counter will determine the tally between heads or tails
-   // A2: the conditional statment to determine whether if the user picks heads or tails
-   // R: will return either heads or tails and keep tally of which is winnning
-}
-// freecodecamp reference
-function nonMutatingPush(original, newItem) {
-   return original.concat(newItem);
-}
-var first = [1, 2, 3];
-var second = [4, 5];
-nonMutatingPush(first, second);
 
-function noPushConcat(input1) {
-   // A1: variable counter will determine the tally between heads or tails
-   // A2: the conditional statment to determine whether if the user picks heads or tails
-   // R: will return either heads or tails and keep tally of which is winnning
+var ratings = watchList.map((movie) => {
+   let title = movie.Title;
+   let rating = movie.imdbRating;
+   console.log(title, rating);
+   let movieSummary = {
+      title: title,
+      rating: rating,
+   };
+   return movieSummary;
+});
+
+console.log(JSON.stringify(ratings));
+
+function map(input1) {
+   // A1:
+   // A2:
+   // R:
 }
 // freecodecamp reference
 function nonMutatingConcat(original, attach) {
@@ -243,10 +188,10 @@ var first = [1, 2, 3];
 var second = [4, 5];
 nonMutatingConcat(first, second);
 
-function keepTogetherConcat(input1) {
-   // A1: variable counter will determine the tally between heads or tails
-   // A2: the conditional statment to determine whether if the user picks heads or tails
-   // R: will return either heads or tails and keep tally of which is winnning
+function keepTogetherConcat(first, second) {
+   // A1: place two arguments so the user can type what they like
+   // R: what the user typed in both input boxes
+   return first.concat(second);
 }
 
 // freecodecamp reference
@@ -256,11 +201,19 @@ function nonMutatingSplice(cities) {
 var inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
 nonMutatingSplice(inputCities);
 
-function noChangeSplice(input1) {
-   // A1: variable counter will determine the tally between heads or tails
-   // A2: the conditional statment to determine whether if the user picks heads or tails
-   // R: will return either heads or tails and keep tally of which is winnning
+function changeTheArraySlice(cultureFood) {
+   // A1:
+   // R:
+   return food.slice(0, cultureFood);
 }
+let food = [
+   "NicaDishes",
+   "ThaiDishes",
+   "HonduranDishes",
+   "CubanDishes",
+   "PeruvianDishes",
+];
+
 // freecodecamp reference
 function sliceArray(anim, beginSlice, endSlice) {
    return anim.slice(beginSlice, endSlice);
@@ -269,9 +222,8 @@ var inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
 sliceArray(inputAnim, 1, 3);
 
 function sliceList(favoriteSport, beginSlice, endSlice) {
-   // A1:
-   // A2:
-   // R:
+   // A1: an array of strings is listed
+   // R: user favorite sport and function will slice how many letters they want
    return favoriteSport.slice(beginSlice, endSlice);
 }
 let sports = [basketball, football, baseball, hockey];
