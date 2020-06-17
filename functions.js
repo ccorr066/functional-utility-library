@@ -19,8 +19,8 @@ function checkPositive(arr) {
 checkPositive([1, 2, 3, -4, 5]);
 
 function checkNums(value) {
-   // A1:
-   // R:
+   // A1: takes in the value of the user
+   // R: a boolean whether the value is positive or negative
    return value.every((nums) => nums > 0);
 }
 
