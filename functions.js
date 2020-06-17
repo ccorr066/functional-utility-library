@@ -268,12 +268,14 @@ function sliceArray(anim, beginSlice, endSlice) {
 var inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
 sliceArray(inputAnim, 1, 3);
 
-const sliceList = (input1) => {
-   // A1: variable counter will determine the tally between heads or tails
-   // A2: the conditional statment to determine whether if the user picks heads or tails
-   // R: will return either heads or tails and keep tally of which is winnning
-};
-
+function sliceList(favoriteSport, beginSlice, endSlice) {
+   // A1:
+   // A2:
+   // R:
+   return favoriteSport.slice(beginSlice, endSlice);
+}
+let sports = [basketball, football, baseball, hockey];
+sliceList(sports, beingSlice, endSlice);
 // freecodecamp reference
 let s = [23, 65, 98, 5];
 
