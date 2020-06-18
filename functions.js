@@ -21,7 +21,8 @@ checkPositive([1, 2, 3, -4, 5]);
 function checkNums(value) {
    // A1: takes in the value of the user
    // R: a boolean whether the value is positive or negative
-   return value.every((nums) => nums > 0);
+   const checkValue = value.every((nums) => nums > 0);
+   return checkValue;
 }
 
 // freecodecamp reference
@@ -190,33 +191,35 @@ var ratings = watchList.map((movie) => {
 
 console.log(JSON.stringify(ratings));
 
-function musicThatInfluence() {
-   // A1:
-   // A2:
-   // R:
+function musicThatInfluence(userInput) {
+   // A1:takes in what the usertypes in from the array of objects
+   // R: returns what the user inputs to access a key value to return an array
+   let albumMasterPiece = [
+      {
+         artist: "Eminem",
+         album: "Slim Shady lp",
+         genre: "Hip-Hop",
+      },
+      {
+         artist: "Metallica",
+         album: " Master of Puppets",
+         genre: "Heavy Metal",
+      },
+      {
+         artist: "Michael Jackson",
+         album: "Thriller",
+         genre: "Pop",
+      },
+      {
+         artist: "Bob Marley",
+         album: "Exodus",
+         genre: "Reggae",
+      },
+   ];
+   const music = albumMasterPiece.map((musicObj) => musicObj[userInput]);
+   return music;
 }
-let albumMasterPiece = [
-   {
-      arist: "Eminem",
-      album: "Slim Shady lp",
-      genre: "Hip-Hop",
-   },
-   {
-      arist: "Metallica",
-      album: " Master of Puppets",
-      genre: "Heavy Metal",
-   },
-   {
-      arist: "Michael Jackson",
-      album: "Thriller",
-      genre: "Pop",
-   },
-   {
-      arist: "Bob Marley",
-      album: "Exodus",
-      genre: "Reggae",
-   },
-];
+
 // freecodecamp reference
 function nonMutatingConcat(original, attach) {
    return original.concat(attach);
