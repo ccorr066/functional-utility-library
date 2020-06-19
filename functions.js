@@ -1,16 +1,113 @@
 // freecodecamp reference
+function isBigEnough(value) {
+   return value >= 10;
+}
 
-function includes(input1) {
+let filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
+// filtered is [12, 130, 44]
+
+function retiredPlayers(input1) {
    // A1:
    // A2:
    // R:
+   const retiredBasketballPlayers = [
+      {
+         player: "Michael Jordan",
+         seasons: 14,
+         championships: 6,
+         drafted: 1984,
+      },
+      {
+         player: "Kobe Bryant",
+         seasons: 18,
+         championships: 5,
+         drafted: 1996,
+      },
+      {
+         player: "Kareem Abdul-Jabbar",
+         seasons: 20,
+         championships: 6,
+         drafted: 1969,
+      },
+      {
+         player: "Earvin Magic Johnson Jr",
+         seasons: 12,
+         championships: 5,
+         drafted: 1979,
+      },
+      {
+         player: "Larry Bird",
+         seasons: 12,
+         championships: 4,
+         drafted: 1979,
+      },
+      {
+         player: "Shaquille O'Neal",
+         seasons: 15,
+         championships: 4,
+         drafted: 1992,
+      },
+      {
+         player: "Wilt Chamberlain",
+         seasons: 13,
+         championships: 2,
+         drafted: 1959,
+      },
+      {
+         player: "Tim Duncan",
+         seasons: 18,
+         championships: 5,
+         drafted: 1997,
+      },
+      {
+         player: "Hakeem Olajuwon",
+         seasons: 17,
+         championships: 2,
+         drafted: 1984,
+      },
+   ];
+
+   const basketball = retiredBasketballPlayers.filter((obj) =>
+      input1.includes(obj.player)
+   );
+   return JSON.stringify(basketball);
+}
+
+// freecodecamp reference
+
+const pets = ["cat", "dog", "bat"];
+
+console.log(pets.includes("cat"));
+// expected output: true
+
+console.log(pets.includes("at"));
+// expected output: false
+
+function keepTrackOfIt(findMe) {
+   // A1: findMe is the user inputs
+   // R: displays true if its from the listed array, or else it will display false.
+   const instruments = [
+      "guitar",
+      "clarinet",
+      "violin",
+      "bass",
+      "drums",
+      "piano",
+   ];
+   return instruments.includes(findMe);
 }
 // freecodecamp reference
 
-function some(input1) {
-   // A1:
-   // A2:
-   // R:
+function checkPositive(arr) {
+   return arr.some((value) => value > 0);
+}
+checkPositive([1, 2, 3, -4, 5]);
+
+function notSoStrict(input1) {
+   // A1:takes in the value of the user
+   // R:a boolean whether the value is positive or negative
+   const someValue = input1.some((value) => value > 0);
+   return someValue;
 }
 // freecodecamp reference
 function checkPositive(arr) {
